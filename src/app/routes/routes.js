@@ -1,5 +1,5 @@
 module.exports = (app) => {
-    app.get('/', function (res, res) {
+    app.get('/', function (req, res) {
         res.send(`
                 <!DOCTYPE html>
                 <html lang="pt-BR">                
@@ -13,11 +13,11 @@ module.exports = (app) => {
                     <h1>Hello World</h1>
                     <script src="./scripts/index.js"></script>
                 </body>    
-                </html>`
-        );
+                </html>                
+        `);
     });
     
-    app.get('/teste', function (res, res) {
+    app.get('/teste', function (req, res) {
         res.send(`
                 <!DOCTYPE html>
                 <html lang="pt-BR">
@@ -37,7 +37,7 @@ module.exports = (app) => {
         );
     });
 
-    app.get('/00', function (res, res) {
+    app.get('/00', function (req, res) {
         res.send(`
                 <!DOCTYPE html>
                 <html lang="pt-BR">
