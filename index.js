@@ -1,4 +1,4 @@
-const app = require('./config/config')
+const app = require('./config/config');
 const port = 3000;
 
 app.listen(port);
